@@ -19,7 +19,6 @@ or if running on a remote server:
 jupyter notebook --ip <IP_ADDRESS>
 ```
 
-(Playgrounds/README.md)
 To see how the Quantum Channel Decoder works, open [Quantum Polar Decoding](Polar/QuantumPolar.ipynb) or [Quantum Hamming Decoding](Hamming/QuantumHamming.ipynb) notebooks.
 
 We have saved some of our experiment results in ``yml`` files in the ``ExpFiles`` folders for both Hamming Code and Polar Code. To see these results or to run your own experiments to obtain the frame error rates, use the notebooks [Quantum Polar Experiments](Polar/PolarExperiments.ipynb) or [Quantum Hamming Experiments](Hamming/HammingExperiments.ipynb).
