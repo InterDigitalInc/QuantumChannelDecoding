@@ -1,9 +1,9 @@
-# Running PolarQaoa in Amazon Braket
-This notebooks in the directory show how to run Quantum Channel Decoders with real or simulated quantom computers on Amazon Braket. This code is based on our paper "Quantum Channel Decoding" as submitted to the [QEC-22 conference](https://qce.quantum.ieee.org/2022/)
+# Running Quantum Decoders in Amazon Braket
+The notebooks in the directory show how to run Quantum Channel Decoders with real or simulated quantom computers on Amazon Braket. This code is based on our paper "Quantum Channel Decoding" as submitted to the [QEC-22 conference](https://qce.quantum.ieee.org/2022/)
 
 ## Running locally
 ### Create and initialize a virtual environment
-Make sure you have python 3.8 or later installed. Then run the following commands in a termonal window:
+Make sure you have python 3.8 or later installed. Then run the following commands in a terminal window:
 ```
 python3 -m venv ve
 source ve/bin/activate
