@@ -7,6 +7,7 @@ Make sure you have python 3.8 or later installed. Then run the following command
 python3 -m venv ve
 source ve/bin/activate
 pip install --upgrade pip numpy pyyaml matplotlib scipy notebook qiskit pylatexenc
+pip install amazon-braket-sdk  # Install this you want to run the Braket examples on your local device
 ```
 
 ## Running the notebook experiments
