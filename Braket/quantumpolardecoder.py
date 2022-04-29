@@ -132,6 +132,7 @@ class QuantumPolar:
         
     # ******************************************************************************************************************
     def setSimulator(self, sim):
+        self.simulator = sim
         if sim[:4].lower()=="fake":
             # For more info about "Fake" Quantum Computers visit:
             #   https://qiskit.org/documentation/tutorials/simulators/2_device_noise_simulation.html
@@ -140,12 +141,10 @@ class QuantumPolar:
             fakeBackend = fakeComputerClass()
             self.fakeComputer = AerSimulator.from_backend(fakeBackend)
             self._backend = fakeBackend
-            self.simulator = sim
-        else:
-            self.simulator = sim
+        elif PLATFORM=="QISKIT":
             self._backend = Aer.get_backend(self.simulator)
             if self.device is not None: self._backend.set_options(device=self.device)
-        
+
     # ******************************************************************************************************************
     def getRandomMessage(self, ebNoDb=4, count=1):
         msgs = np.random.randint(0,2,(count,self.k))
