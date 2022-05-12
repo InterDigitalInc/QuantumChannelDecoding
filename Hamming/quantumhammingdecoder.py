@@ -340,11 +340,10 @@ class QuantumHamming:
         wMc = max(9,self.k)         # MSG (cor)       The message corrected based on the parity check bits
         wCrlC = 11                  # Corrl (cor)     The correlation between rx and "CW (cor)"
 
-        mcStr = "".join("M" if i in self.dIdx else "C" for i in range(self.n))
         mpStr = "".join("M" if i in self.dIdx else "P" for i in range(self.n))
         headerFormat = "    %%-%ds  %%5s  %%-%ds  %%-%ds  %%-%ds  %%-%ds  %%-%ds  %%-%ds  %%-%ds  %%-%ds"%(wB, wM, wCw, wCrl, wC, wCwR, wCwC, wMc, wCrlC)
         print(headerFormat%("Qubits", "Count", "MSG", "Code-Word", "Correlation", "Check", "CW (rx)", "CW (cor)", "MSG (cor)", "Corrl (cor)"))
-        print(headerFormat%(mpStr, "", "", mcStr, "", "", mcStr, mcStr, "", ""))
+        print(headerFormat%(mpStr, "", "", mpStr, "", "", mpStr, mpStr, "", ""))
 
         for qbsStr,count in topKCounts:
             bsStr = self.qbsStr2bsStr(qbsStr)
