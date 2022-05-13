@@ -1,6 +1,8 @@
 # Quantum Channel Decoder
 This repository contains the code for the experiments related to our paper: "Quantum Channel Decoding" as submitted to the [QEC-22 conference](https://qce.quantum.ieee.org/2022/)
 
+![HammingCircuit74](HammingCircuit74.png)
+
 ## Create and initialize a virtual environment
 Make sure you have python 3.8 or later installed. Then run the following commands in a terminal window:
 ```
